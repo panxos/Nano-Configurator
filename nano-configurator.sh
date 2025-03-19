@@ -6,7 +6,7 @@
 # Repository: https://github.com/panxos/Nano-Configurator
 # Location: Chile
 # License: MIT
-# Version: 1.0
+# Version: 1.1
 #=====================================================================
 
 # Color definitions
@@ -236,7 +236,7 @@ update_main_config() {
     fi
     
     if nano --help | grep -q "mouse"; then
-        echo "set mouse" >> "$temp_file"
+        #Secho "set mouse" >> "$temp_file"
     fi
     
     if nano --help | grep -q "historylog"; then
@@ -511,7 +511,7 @@ toggle_module() {
                 found=1
                 echo "# Advanced features" >> "$temp_file"
                 echo "set multibuffer" >> "$temp_file"
-                echo "set mouse" >> "$temp_file"
+               # echo "set mouse" >> "$temp_file"
                 echo "set historylog" >> "$temp_file"
                 echo "" >> "$temp_file"
                 if [ "$LANGUAGE" == "es" ]; then

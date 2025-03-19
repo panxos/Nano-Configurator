@@ -15,6 +15,7 @@ Nano Configurator es una herramienta avanzada de configuración para el editor d
 - 🔧 Activación/desactivación de diferentes características de edición
 - 🛡️ Respaldo de configuración original
 - 🚀 Opciones fáciles de instalación y reinicio
+- 🖱️ Sin soporte de mouse para permitir la selección/copiado normal de texto
 
 ### Instalación
 
@@ -55,7 +56,7 @@ IDs de características disponibles:
 - `2` o `syntax`: Resaltado de sintaxis
 - `3` o `programming`: Características de programación
 - `4` o `behavior`: Comportamiento mejorado del editor
-- `5` o `advanced`: Características avanzadas
+- `5` o `advanced`: Características avanzadas (sin soporte de mouse)
 - `all`: Activar todas las características
 - `none`: Desactivar todo excepto resaltado de sintaxis
 
@@ -63,6 +64,10 @@ Ejemplo:
 ```bash
 sudo ./nano-configurator.sh --toggle 1  # Activar/desactivar números de línea
 ```
+
+### Importante: Soporte de Mouse
+
+⚠️ Esta versión ha eliminado deliberadamente el soporte de mouse para evitar problemas con la selección y copiado de texto en la terminal. Esto permite usar las funciones nativas de selección y copiado de la terminal sin interferencias.
 
 ### Capturas de Pantalla
 
@@ -100,6 +105,7 @@ Nano Configurator is an advanced configuration tool for the Nano text editor, de
 - 🔧 Toggle different editing features
 - 🛡️ Backup of original configuration
 - 🚀 Easy installation and reset options
+- 🖱️ No mouse support to allow normal text selection/copying
 
 ### Installation
 
@@ -140,7 +146,7 @@ Available feature IDs:
 - `2` or `syntax`: Syntax highlighting
 - `3` or `programming`: Programming features
 - `4` or `behavior`: Improved editor behavior
-- `5` or `advanced`: Advanced features
+- `5` or `advanced`: Advanced features (without mouse support)
 - `all`: Enable all features
 - `none`: Disable all except syntax highlighting
 
@@ -148,6 +154,10 @@ Example:
 ```bash
 sudo ./nano-configurator.sh --toggle 1  # Toggle line numbers
 ```
+
+### Important: Mouse Support
+
+⚠️ This version has deliberately removed mouse support to avoid issues with text selection and copying in the terminal. This allows using the terminal's native selection and copying functions without interference.
 
 ### Screenshots
 
