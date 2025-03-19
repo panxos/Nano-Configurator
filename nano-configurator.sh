@@ -235,9 +235,9 @@ update_main_config() {
         echo "set multibuffer" >> "$temp_file"
     fi
     
-    if nano --help | grep -q "mouse"; then
+    #if nano --help | grep -q "mouse"; then
         #Secho "set mouse" >> "$temp_file"
-    fi
+    #fi
     
     if nano --help | grep -q "historylog"; then
         echo "set historylog" >> "$temp_file"
